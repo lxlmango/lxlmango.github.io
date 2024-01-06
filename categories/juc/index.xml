@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>JUC - 分类 - LoveIt</title>
+        <link>https://example.com/categories/juc/</link>
+        <description>JUC - 分类 - LoveIt</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lxl_mango@163.com (mango)</managingEditor>
+            <webMaster>lxl_mango@163.com (mango)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 06 Jan 2024 12:57:40 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/juc/" rel="self" type="application/rss+xml" /><item>
+    <title>Java线程池基本</title>
+    <link>https://example.com/juc/</link>
+    <pubDate>Sat, 06 Jan 2024 12:57:40 &#43;0800</pubDate>
+    <author>Mango</author>
+    <guid>https://example.com/juc/</guid>
+    <description><![CDATA[<p>这篇文章Java线程池的基本知识.</p>]]></description>
+</item>
+</channel>
+</rss>
