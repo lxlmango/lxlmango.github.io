@@ -2,19 +2,19 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://example.com/juc/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/basic-markdown-syntax/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/categories/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/tags/html/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/tags/juc/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/categories/juc/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/posts/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/tags/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/tags/markdown/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/categories/markdown/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/about/</loc><lastmod>2019-08-02T11:04:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/tags/installation/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/tags/content/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/tags/configuration/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/categories/documentation/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
+            <loc>https://lxlmango.site/posts/juc/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lxlmango.site/posts/basic-markdown-syntax/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://lxlmango.site/categories/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lxlmango.site/tags/html/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lxlmango.site/tags/juc/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lxlmango.site/categories/juc/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lxlmango.site/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lxlmango.site/posts/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lxlmango.site/tags/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lxlmango.site/tags/markdown/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://lxlmango.site/categories/markdown/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://lxlmango.site/about/</loc><lastmod>2019-08-02T11:04:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://lxlmango.site/tags/installation/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://lxlmango.site/tags/content/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://lxlmango.site/tags/configuration/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://lxlmango.site/categories/documentation/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
