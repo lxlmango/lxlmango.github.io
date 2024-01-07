@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>系统架构设计师---绪论 - Mango小站</title><meta name="Description" content="系统架构设计师---绪论部分"><meta property="og:title" content="系统架构设计师---绪论" />
+<meta property="og:description" content="系统架构设计师---绪论部分" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lxlmango.site/posts/20240107/" /><meta property="og:image" content="https://lxlmango.site/logo.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-07T20:57:40+08:00" />
+<meta property="article:modified_time" content="2024-01-07T21:57:40+08:00" /><meta property="og:site_name" content="我的小站" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://lxlmango.site/logo.png" /><meta name="twitter:title" content="系统架构设计师---绪论"/>
+<meta name="twitter:description" content="系统架构设计师---绪论部分"/>
+<meta name="application-name" content="Mango小站">
+<meta name="apple-mobile-web-app-title" content="Mango小站"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://lxlmango.site/posts/20240107/" /><link rel="prev" href="https://lxlmango.site/posts/juc/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "系统架构设计师---绪论",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/lxlmango.site\/posts\/20240107\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/lxlmango.site\/images\/Apple-Devices-Preview.png",
+                            "width":  3200 ,
+                            "height":  2048 
+                        }],"genre": "posts","keywords": "系统架构设计师","wordcount":  1875 ,
+        "url": "https:\/\/lxlmango.site\/posts\/20240107\/","datePublished": "2024-01-07T20:57:40+08:00","dateModified": "2024-01-07T21:57:40+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/lxlmango.site\/images\/avatar.png",
+                    "width":  0 ,
+                    "height":  0 
+                }},"author": {
+                "@type": "Person",
+                "name": "Mango"
+            },"description": "系统架构设计师---绪论部分"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Mango小站"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>Mango</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/lxlmango" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Mango小站"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>Mango</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/lxlmango" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">系统架构设计师---绪论</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://lxlmango.site" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Mango</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>系统架构设计师</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-01-07">2024-01-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1875 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 4 分钟&nbsp;<span id="/posts/20240107/" class="leancloud_visitors" data-flag-title="系统架构设计师---绪论">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><h1 id="绪论">绪论</h1>
+<ul>
+<li><strong>架构的定义</strong>
+架构是体现在组件中的一个系统的基本组织，它们彼此的关系与环境的关系及指导它的设计和发展的原则</li>
+</ul>
+<hr>
+<ul>
+<li><strong>系统架构师角色</strong>
+系统架构师就是项目的总设计师，他是一个即需要掌握整体又需要洞悉局部瓶颈，并根据具体的业务场景给出解决方案的总体设计人员；他需要确定和评估系统需求，给出开发规范，搭建系统实现的核心架构，并澄清技术细节，扫清主要难点的技术人员 ；他要掌握技术团队的能力需要，给出项目管理方法，采用合适的生命周期模型，具备以自身为核心形成团队的能力，并在项目进度计划和经费分配等方面开展评估，以预防项目风险。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>架构设计的作用</strong>
+1.解决相对复杂的需求分析问题
+2.解决非功能属性在系统占据主要位置的设计问题
+3.解决生命周期长，扩展性需求高的系统整体结构问题
+4.解决系统基于组件需要的集成问题
+5.解决业务流程再造难的问题</li>
+</ul>
+<hr>
+<ul>
+<li><strong>系统架构是什么</strong>
+系统架构是系统的一种整体的高层次的结构表示，是系统的骨架和根基，支撑和链接各个部分，包括组件、连接件、约束规范以及指导这些内容设计与演化的原理，他是刻画系统整体抽象结构的一种手段，也决定了系统的健壮性和生命周期的长短</li>
+</ul>
+<hr>
+<ul>
+<li><strong>系统的定义</strong>
+系统是组织起来完成某一特定功能或一组功能的组件集。系统这几术语还包括了单独的应用程序、传统意义上的系统、子系统、系统之系统、产品线、整个企业及感兴趣的其他集合。系统用于完成其环境中的一个或多个任务。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>架构设计师的定义</strong>
+架构设计师是系统开发的主体角色，他们通过执行一系列活动来实施架构设计。架构设计通过生成过程形成最终的产品架构，架构设计师的成果师创建架构。架构设计师是负责系统架构的人、团队或者组织，是系统或产品线的设计责任人，是一个负责理解和管理并最终确认和评估非功能系统需求、给出开发规范、搭建系统实现的核心架构，对整个软件架构、关键构建和接口进行总体设计并澄清关键技术细节的高级技术人员。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>架构设计师需要具备的专业素质</strong></li>
+<li>掌握业务领域知识、</li>
+<li>掌握技术知识</li>
+<li>掌握设计知识</li>
+<li>具备编程技能</li>
+<li>具备沟通能力</li>
+<li>具备决策能力</li>
+<li>知道组织策略</li>
+<li>是个谈判专家</li>
+</ul>
+<hr>
+<ul>
+<li><strong>软件架构的常用分类</strong></li>
+</ul>
+<ol>
+<li><strong>分层架构</strong>
+分层架构是最常见的软件架构，也是事实上的标准架构，这种架构将软件分成若干个水平层，每一层都有清晰的角色和分工，不需要指导其他层的细节，层与层之间通过接口进行通信。分层架构通常明确约定软件一定要分多少层，常见的分层架构为四层</li>
+</ol>
+<ul>
+<li>表现层：用户界面，负责视觉和用户互动</li>
+<li>业务层：实现业务逻辑</li>
+<li>持久层：提供数据，SQL语句就放在这一层</li>
+<li>数据层：保存数据</li>
+</ul>
+<ol start="2">
+<li><strong>事件驱动架构</strong>
+事件是状态发生变化时软件发出的通知，事件驱动架构是通过事件进行通信的软件架构，有<strong>4个</strong>组成部分</li>
+</ol>
+<ul>
+<li>事件队列：接收事件的入口</li>
+<li>事件分发器：将不同的事件分到不同的业务逻辑单元</li>
+<li>事件通道：分发器与处理器之间的联系渠道</li>
+<li>事件处理器：实现业务逻辑，处理完成后发出事件，触发下一步操作</li>
+</ul>
+<ol start="3">
+<li>
+<p><strong>微核架构</strong>
+微核架构又称为插件架构，是指软件的内核相对较小，主要功能和业务逻辑都通过插件实现，内核通常只包含系统运行的最小功能，插件则是相互独立的，插件之间的通信应该减少到最低，避免出现相互依赖问题</p>
+</li>
+<li>
+<p><strong>微服务架构</strong>
+微服务架构师服务导向(SOA)的升级，每个服务都是一个独立的部署单元，这些单元是分布式的，互相解耦，通过远程通信协议(比如REST,SOAP)联系，三种实现模式</p>
+</li>
+</ol>
+<ul>
+<li>RESTFULAPI模式：服务通过API提供，云服务就属于这一类</li>
+<li>RESTFUL应用模式：服务通过传统的网络协议或者应用协议提供，背后通常是一个多功能应用程序，常见于企业内部</li>
+<li>集中消息模式：采用消息代理，可以实现消息队列、负载均衡、统一日志和异常处理，缺点是会出现单点失败，消息代理可能需要做成集群</li>
+</ul>
+<ol start="5">
+<li><strong>云架构</strong>
+云架构主要解决扩展性和并发性问题，是最容易扩展的架构，它的扩展性体现在将数据复制到内存中，变成可复制的内存数据单元，然后业务处理能力封装成一个个处理单元。若访问量增加，就增加处理单元，访问量减少则关闭处理单元，由于没有中央数据库，所以扩展性最大的瓶颈消失了，由于每个处理单元的数据均在内存里，需要进行数据持久化，主要分为</li>
+</ol>
+<ul>
+<li>处理单元，实现业务逻辑</li>
+<li>虚拟中间件：负责通信、保持会话控制、数据复制、分布式处理和处理单元部署，包含四个组件
+①消息中间件: 管理用户请求和会话控制，当一个请求进来后，它决定分配给哪个处理单元
+②数据中间件: 将数据复制到每一个处理单元，即数据同步，保证每个处理单元都得到同意的数据
+③处理中间件: 可选的，如果一个请求涉及不同类型的处理单元，该中间件负责协调处理单元
+④部署中间件: 负责处理单元的启动和关闭，监控负载和响应事件，当负载增加，则新启动处理单元，负载降低，则关闭处理单元</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-01-07</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/posts/20240107/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://lxlmango.site/posts/20240107/" data-title="系统架构设计师---绪论" data-hashtags="系统架构设计师"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://lxlmango.site/posts/20240107/" data-hashtag="系统架构设计师"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://lxlmango.site/posts/20240107/" data-title="系统架构设计师---绪论"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://lxlmango.site/posts/20240107/" data-title="系统架构设计师---绪论"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://lxlmango.site/posts/20240107/" data-title="系统架构设计师---绪论"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88/">系统架构设计师</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/juc/" class="prev" rel="prev" title="Java线程池基本"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Java线程池基本</a></div>
+</div>
+<div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container">
+			<div class="footer-line">
+				<span id="run-time"></span>
+			</div><div class="footer-line"><span>临渊羡鱼,不如退而结网<span></div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2024</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://lxlmango.site" target="_blank">mango</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.css"><link rel="stylesheet" href="/lib/valine/valine.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"gitalk":{"admin":["lxlmango"],"clientID":"9636c63d7d7405878343","clientSecret":"c86ff368f4c114ece9ac1f4bb6d24d7e60f49631 ","id":"2024-01-07T20:57:40+08:00","owner":"lxlmango","repo":"blog-comment","title":"系统架构设计师---绪论"},"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"visitor":true}},"lightgallery":true,"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/js/custom.js"></script></body>
+</html>

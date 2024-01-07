@@ -4,9 +4,17 @@
         <link>https://lxlmango.site/</link>
         <description>分享个人学习生活</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lxl_mango@163.com (mango)</managingEditor>
-            <webMaster>lxl_mango@163.com (mango)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 06 Jan 2024 12:57:40 &#43;0800</lastBuildDate>
+            <webMaster>lxl_mango@163.com (mango)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 07 Jan 2024 20:57:40 &#43;0800</lastBuildDate>
             <atom:link href="https://lxlmango.site/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>系统架构设计师---绪论</title>
+    <link>https://lxlmango.site/posts/20240107/</link>
+    <pubDate>Sun, 07 Jan 2024 20:57:40 &#43;0800</pubDate>
+    <author>Mango</author>
+    <guid>https://lxlmango.site/posts/20240107/</guid>
+    <description><![CDATA[绪论 架构的定义 架构是体现在组件中的一个系统的基本组织，它们彼此的关系与环境的关系及指导它的设计和发展的原则 系统架构师角色 系统架构师就是项目的]]></description>
+</item>
+<item>
     <title>Java线程池基本</title>
     <link>https://lxlmango.site/posts/juc/</link>
     <pubDate>Sat, 06 Jan 2024 12:57:40 &#43;0800</pubDate>

@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>系统架构设计师 - 分类 - Mango小站</title>
+        <link>https://lxlmango.site/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88/</link>
+        <description>系统架构设计师 - 分类 - Mango小站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lxl_mango@163.com (mango)</managingEditor>
+            <webMaster>lxl_mango@163.com (mango)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 07 Jan 2024 20:57:40 &#43;0800</lastBuildDate><atom:link href="https://lxlmango.site/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88/" rel="self" type="application/rss+xml" /><item>
+    <title>系统架构设计师---绪论</title>
+    <link>https://lxlmango.site/posts/20240107/</link>
+    <pubDate>Sun, 07 Jan 2024 20:57:40 &#43;0800</pubDate>
+    <author>Mango</author>
+    <guid>https://lxlmango.site/posts/20240107/</guid>
+    <description><![CDATA[绪论 架构的定义 架构是体现在组件中的一个系统的基本组织，它们彼此的关系与环境的关系及指导它的设计和发展的原则 系统架构师角色 系统架构师就是项目的]]></description>
+</item>
+</channel>
+</rss>

@@ -2,15 +2,18 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://lxlmango.site/posts/20240107/</loc><lastmod>2024-01-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://lxlmango.site/posts/juc/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://lxlmango.site/posts/basic-markdown-syntax/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://lxlmango.site/categories/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lxlmango.site/categories/</loc><lastmod>2024-01-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lxlmango.site/</loc><lastmod>2024-01-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lxlmango.site/posts/</loc><lastmod>2024-01-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lxlmango.site/tags/</loc><lastmod>2024-01-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lxlmango.site/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88/</loc><lastmod>2024-01-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lxlmango.site/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88/</loc><lastmod>2024-01-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://lxlmango.site/tags/html/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://lxlmango.site/tags/juc/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://lxlmango.site/categories/juc/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://lxlmango.site/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://lxlmango.site/posts/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://lxlmango.site/tags/</loc><lastmod>2024-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://lxlmango.site/tags/markdown/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://lxlmango.site/categories/markdown/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://lxlmango.site/about/</loc><lastmod>2019-08-02T11:04:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
